@@ -1,0 +1,67 @@
+/* Inter */
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+}
+
+/* Next */
+@font-face {
+    font-family: 'Next';
+    src: url(../fonts/NEXT_ART_Bold.otf) format('opentype');
+    font-weight: 600;
+}
+
+/* Nurito Sans */
+@font-face {
+    font-family: 'Nurito Sans';
+    src: url(../fonts/NunitoSans_7pt_Condensed-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Nurito Sans';
+    src: url(../fonts/NunitoSans_7pt_Condensed-ExtraBold.ttf) format('truetype');
+    font-weight: 800;
+}
+@font-face {
+    font-family: 'Nurito Sans';
+    src: url(../fonts/NunitoSans_7pt_Condensed-Light.ttf) format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Nurito Sans';
+    src: url(../fonts/NunitoSans_7pt_Condensed-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Nurito Sans';
+    src: url(../fonts/NunitoSans_7pt_Condensed-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+}
+
+/* icons */
+@font-face {
+    font-family: 'icon-brands';
+    src: url(../fonts/icons/fa-brands-400.ttf) format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'icons';
+    src: url(../fonts/icons/fa-light-300.ttf) format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'icons';
+    src: url(../fonts/icons/fa-regular-400.ttf) format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'icons';
+    src: url(../fonts/icons/fa-solid-900.ttf) format('truetype');
+    font-weight: 900;
+}
+@font-face {
+    font-family: 'icons-duotone';
+    src: url(../fonts/icons/fa-duotone-900.ttf) format('truetype');
+    font-weight: 900;
+}
