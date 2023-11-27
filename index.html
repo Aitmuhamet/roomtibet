@@ -12,7 +12,7 @@
 <body>
   <div class="site-header">
     <img src="img/header-img.png" alt="Header background" class="site-header__img">
-    <div class="container site-header__inner">
+    <div class="container site-header__inner site-header__content">
       <div class="site-header__nav">
         <nav class="navbar navbar-expand-lg bg-body-tertiary site-header__navbar">
           <div class="container-fluid navbar__inner">
@@ -110,13 +110,64 @@
           </div>
         </nav>
       </div>
-      <div class="site-header__slogan">
+      <h1 class="site-header__headline">
+        Насладись <br class="br-sm"> прогулкой в <span class="span-word-md">горах</span><span class="span-word-sm">горы</span> <br>с командой <br class="br-sm"> единомышленников
+      </h1>
+      <button type="button" class="site-btn site-header__form-el site-btn--white site-header__form-btn">Найти программу</button>
+      <form action="#" method="post" class="form site-header__form">
+        <label for="location" class="icon-down-form">
+          <select id="location" name="bokinkg__location" class="site-header__form-el select-sort-mobile">
+            <option value="location_1" class="form__option">Локация для тура</option>
+            <option value="location_2" class="form__option">Локация для тура №2</option>
+            <option value="location_3" class="form__option">Локация для тура №3</option>
+            <option value="location_4" class="form__option">Локация для тура №4</option>
+            <option value="location_5" class="form__option">Локация для тура №5</option>
+          </select>
+          <p class="form__label-text">
+            выберите из списка
+          </p>
+        </label>
 
-      </div>
+        <label for="date">
+          <input type="date" name="trip-start" id="date" class="site-header__form-el" value="2018-07-22" placeholder="Дата похода">
+          <p class="form__label-text">
+            укажите диапазон
+          </p>
+        </label>
+
+        <label for="users" class="icon-down-form">
+          <select id="users" name="bokinkg__location" class="form__select site-header__form-el select-sort-mobile">
+            <option value="user_1" class="form__option">Участники</option>
+            <option value="user_2" class="form__option">Участники №2</option>
+            <option value="user_3" class="form__option">Участники №3</option>
+            <option value="user_4" class="form__option">Участники №4</option>
+            <option value="user_5" class="form__option">Участники №5</option>
+          </select>
+          <p class="form__label-text">
+            минимум 4 человека
+          </p>
+        </label>
+        <button type="submit" class="site-btn site-header__form-el site-btn--white">Найти программу</button>
+      </form>
     </div>
   </div>
   <div class="site-main">
-
+    <div class="site-main__expedition expedition">
+      <div class="container">
+        <div class="expedition__grid">
+          <div class="col grid-col-1 videos">
+            <video src="video/2.mp4" class="videos__item videos__item-1"></video>
+            <video src="video/1.mp4" class="videos__item videos__item-2" controls></video>
+          </div>
+          <div class="col grid-col-2">
+            <div class="expedition__subtitle">о нашем походе</div>
+            <h2 class="expedition__title">Исследуйте все горные массивы мира вместе с нами</h2>
+            <div class="expedition__desc">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</div>
+            <div class="site-btn expedition__btn">Программа тура</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="js/bootstrap.bundle.min.js"></script>
