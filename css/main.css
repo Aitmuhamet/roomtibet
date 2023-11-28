@@ -99,7 +99,7 @@ body {
     top: 0;
     left: 0;
     overflow: hidden;
-    z-index: 2;
+    z-index: 3;
 }
 
 .site-header__img {
@@ -169,6 +169,7 @@ body {
     position: relative;
     width: 30px;
     height: 30px;
+    z-index: 2;
 }
 .site-header__toggler:focus {
     box-shadow: none;
@@ -207,6 +208,17 @@ body {
 }
 .navbar-toggler:not(.collapsed) .site-header__toggler-el:nth-child(3) {
     display: none;
+}
+.navbar-nav-open {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #1A3E3E;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 50px 7%;
+    transition: all 0.2s;
 }
 .navbar--open {
     width: 100vw;
@@ -251,7 +263,7 @@ body {
 .span-word-sm {
     display: none;
 }
-.br-sm {
+.br-lg {
     display: none;
 }
 
@@ -290,6 +302,28 @@ body {
     right: 16px;
     top: 16px;
 }
+.icon-play::before {
+    font-family: 'icons';
+    content: '\f04b';
+    font-weight: 600;
+    color: #1A3E3E;
+    position: absolute;
+    top: 176px;
+    left: 146px;
+    background: rgba(252, 252, 252, 0.6);
+    z-index: 1;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    padding-left: 4px;
+}
+.icon-play {
+    position: relative;
+    z-index: 2;
+}
 
 .icon-down-form,
 .icon-up-form {
@@ -322,6 +356,11 @@ body {
     line-height: 150%; /* 24px */
 
     width: 100%;
+}
+.site-header__btn {
+    border-radius: 8px;
+    border: 1px solid var(--wl-primary-primary-300, #1A3E3E);
+    padding: 14px 16px;
 }
 
 .form__label-text {
@@ -381,14 +420,19 @@ body {
     width: 71%;
 
     object-fit: cover;
+    overflow: hidden;
     border-radius: 24px;
 }
 .videos__item-2 {
     top: 126px;
     left: 130px;
 }
+.expedition__video {
+    min-width: 100%;
+    min-height: 100%;
+}
 
-.expedition__subtitle {
+.subtitle {
     color: #F2BE22;
     font-family: Nunito Sans;
     font-size: 24px;
@@ -399,7 +443,7 @@ body {
     margin-bottom: 8px;
 }
 
-.expedition__title {
+.title {
     color: #18121E;
     font-family: Nunito Sans;
     font-size: 32px;
@@ -409,7 +453,7 @@ body {
 
 }
 
-.expedition__desc {
+.desc {
     color: #18121E;
     font-family: Nunito Sans;
     font-size: 18px;
@@ -422,6 +466,7 @@ body {
 .expedition__btn {
     align-self: baseline;
 }
+
 
 @media (max-width: 1199.9px) {
     .logo__img {
@@ -443,6 +488,9 @@ body {
     }
     .videos__item-2 {
         left: 90px;
+    }
+    .icon-play::before {
+        left: 132px;
     }
 }
 @media (max-width: 991.9px) {
@@ -468,11 +516,15 @@ body {
         font-size: 14px;
     }
     .site-header__headline {
-        font-size: 33px;
+        font-size: 50px;
     }
     .site-header__form {
         grid-template-columns: repeat(2, 1fr);
         row-gap: 24px;
+        display: none;
+    }
+    .site-header__form-btn {
+        display: block;
     }
     .expedition__grid {
         grid-template-columns: repeat(1, 1fr);
@@ -494,14 +546,17 @@ body {
     .videos__item-2 {
         left: 30%;
     }
+    .icon-play::before {
+        left: 146px;
+    }
+    .br-lg {
+        display: inline;
+    }
 }
 
 @media (max-width: 767.9px) {
     .site-header__headline {
         font-size: 37px;
-    }
-    .br-sm {
-        display: inline;
     }
 }
 
@@ -515,30 +570,37 @@ body {
     .span-word-md {
         display: none;
     }
-    .site-header__form-btn {
-        display: block;
-    }
     .site-header__form {
         display: none;
+        grid-template-columns: repeat(1, 1fr);
     }
-    .expedition__subtitle {
+    .site-header__form-sm {
+        position: fixed;
+        bottom: 0;
+        left: 2%;
+        right: 2%;
+        top: 70px;
+        bottom: -50px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+    .subtitle {
         font-size: 16px;
     }
-    .expedition__title {
+    .title {
         font-size: 24px;
     }
-    .expedition__desc {
+    .desc {
         font-size: 16px;
         margin: 30px 0;
     }
-    /* .videos {
-        flex-direction: row;
-        overflow-x: auto;
-    }
     .videos__item {
-        position: static;
-        width: 100%;
-    } */
+        top: 0;
+        left: 0;
+        max-width: none;
+    }
+    .icon-play::before {
+        left: 44%;
+    }
 }
 @media (max-width: 400.9px) {
     .site-header__headline {

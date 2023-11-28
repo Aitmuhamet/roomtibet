@@ -27,7 +27,7 @@
               <span class="navbar-toggler-icon site-header__toggler-el"></span>
               <span class="navbar-toggler-icon site-header__toggler-el"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse navbar-nav-wrap" id="navbarSupportedContent">
               <ul class="navbar-nav ms-auto align-items-center site-header__navbar-nav">
                 <li class="nav-item nav-item--main">
                   <a class="active site-header__nav-link" aria-current="page" href="#">Главная</a>
@@ -111,10 +111,10 @@
         </nav>
       </div>
       <h1 class="site-header__headline">
-        Насладись <br class="br-sm"> прогулкой в <span class="span-word-md">горах</span><span class="span-word-sm">горы</span> <br>с командой <br class="br-sm"> единомышленников
+        Насладись <br class="br-lg"> прогулкой в <span class="span-word-md">горах</span><span class="span-word-sm">горы</span> <br>с командой <br class="br-lg"> единомышленников
       </h1>
       <button type="button" class="site-btn site-header__form-el site-btn--white site-header__form-btn">Найти программу</button>
-      <form action="#" method="post" class="form site-header__form">
+      <form action="#" method="post" class="form site-header__form site-header__form-sm">
         <label for="location" class="icon-down-form">
           <select id="location" name="bokinkg__location" class="site-header__form-el select-sort-mobile">
             <option value="location_1" class="form__option">Локация для тура</option>
@@ -147,7 +147,7 @@
             минимум 4 человека
           </p>
         </label>
-        <button type="submit" class="site-btn site-header__form-el site-btn--white">Найти программу</button>
+        <button type="button" class="site-btn site-header__btn">Найти программу</button>
       </form>
     </div>
   </div>
@@ -156,15 +156,37 @@
       <div class="container">
         <div class="expedition__grid">
           <div class="col grid-col-1 videos">
-            <video src="video/2.mp4" class="videos__item videos__item-1"></video>
-            <video src="video/1.mp4" class="videos__item videos__item-2" controls></video>
+            <div class="videos__item videos__item-1">
+              <video src="video/2.mp4" class="expedition__video"></video>
+            </div>
+            <div class="videos__item videos__item-2 icon-play">
+              <video src="video/1.mp4" class="expedition__video "></video>
+            </div>
           </div>
           <div class="col grid-col-2">
-            <div class="expedition__subtitle">о нашем походе</div>
-            <h2 class="expedition__title">Исследуйте все горные массивы мира вместе с нами</h2>
-            <div class="expedition__desc">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</div>
+            <div class="expedition__subtitle subtitle">о нашем походе</div>
+            <h2 class="expedition__title title">Исследуйте все горные массивы мира вместе с нами</h2>
+            <div class="expedition__desc desc">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</div>
             <div class="site-btn expedition__btn">Программа тура</div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="site-main__offering offering">
+      <div class="container">
+        <div class="offering__grid">
+          <div class="offering-col offering-col-1">
+            <div class="offering__subtitle subtitle">наше предложение</div>
+            <div class="offering__title title">Лучшие программы для тебя</div>
+            <div class="offering__desc desc">Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</div>
+            <div class="offering__benefits benefits">
+              <div class="benefits__item">
+                
+              </div>
+            </div>
+            <div class="offering__btn site-btn">Стоимость программ</div>
+          </div>
+          <div class="offering-col offering-col-2"></div>
         </div>
       </div>
     </div>
