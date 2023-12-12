@@ -889,17 +889,18 @@ body {
 .site-footer__grid {
     display: grid;
     grid-template-columns: 480px 280px 280px;
+    justify-content: space-between;
     column-gap: 24px;
 }
 .site-footer__title {
     color: #F3F5F4;
-    font-family: Nunito Sans;
+    font-family: 'Nunito Sans';
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 24px; /* 120% */
 
-    margin-bottom: 17px;
+    margin-bottom: 20px;
 }
 .site-footer__text {
     flex: 1 0 0;
@@ -950,6 +951,35 @@ body {
 }
 .socials__item--margin {
     margin-top: -6px;
+}
+
+.site-footer__item {
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+.nav-item {
+    color: #FDFDFD;
+    font-family: Nunito Sans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+
+    position: relative;
+    /* display: block; */
+}
+.site-footer__column .icon-right::before {
+    position: absolute;
+    left: -15px;
+    top: 0;
+    font-size: 11px;
+}
+.nav-item:hover {
+    color: #F2BE22;
+    text-decoration-line: underline;
+}
+.nav li:hover .icon-right::before  {
+    color: #F2BE22;
 }
 
 @media (max-width: 1399.9px) {
@@ -1022,6 +1052,12 @@ body {
     .blogs__title {
         font-size: 19px;
         line-height: 26px;
+    }
+    .site-footer__grid {
+        grid-template-columns: 1.7fr 1fr 1fr;
+    }
+    .nav-item {
+        /* font-size: 1vw; */
     }
 }
 @media (max-width: 991.9px) {
@@ -1180,6 +1216,34 @@ body {
     }
     .impressions {
         padding: 70px 0 70px;
+    }
+    .site-footer__title {
+        font-size: 0.9em;
+        /* font-size: 1.5vw; */
+    }
+    .site-footer__text,
+    .nav-item {
+        font-size: 1vw;
+    }
+    .site-footer__item {
+        margin-bottom: 10px;
+    }
+    .nav-item {
+        display: block;
+        line-height: 1.5vw;
+    }
+    .contacts {
+        max-width: 60%;
+    }
+    .contacts__item {
+        font-size: 1vw;
+    }
+    .socials__item--bg {
+        width: 24px;
+        height: 24px;
+    }
+    .icon-pnt::before {
+        font-size: 1em;
     }
 }
 
