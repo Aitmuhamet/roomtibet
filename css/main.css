@@ -846,6 +846,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .impressions__subtitle {
     text-align: center;
@@ -1010,8 +1011,8 @@ body {
 
 .site-footer__mailing {
     position: absolute;
-    top: -280px;
     left: 0;
+    bottom: -310px;
 }
 .mailing {
     border-radius: 6px;
@@ -1023,6 +1024,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
 
     padding: 40px 100px;
+    margin: 0 12px;
 }
 .mailing__subtitle {
     color: #F2BE22;
@@ -1371,6 +1373,11 @@ body {
     .icon-pnt::before {
         font-size: 1em;
     }
+    .mailing {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
 }
 
 @media (max-width: 767.9px) {
@@ -1407,6 +1414,21 @@ body {
     }
     .offering__site-btn {
         font-size: 18px;
+    }
+    .mailing {
+        padding: 24px;
+    }
+    .mailing__title {
+        font-size: 24px;
+    }
+    .mailing__inner {
+        flex-wrap: wrap;
+    }
+    .mailing__input {
+        margin-bottom: 16px;
+    }
+    .mailing__button {
+        margin-bottom: 24px;
     }
 }
 
@@ -1509,6 +1531,10 @@ body {
     }
     .impressions {
         padding: 50px 0 50px;
+    }
+    .mailing__input {
+        width: 100%;
+        margin-right: 0;
     }
 }
 @media (max-width: 400.9px) {
